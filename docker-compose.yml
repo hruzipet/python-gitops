@@ -8,5 +8,5 @@ services:
   oncall-apka:      # Musí být takto odsazené (2 mezery)
     build: ./oncall
     ports:
-      - "5001:8000"
+      - "8000:8000"
     restart: always # Doporučuji přidat i sem
