@@ -4,3 +4,5 @@ edge-tts
 pydub
 psycopg2-binary
 python-dotenv
+requests
+flask
