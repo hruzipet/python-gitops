@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+edge-tts 
+pydubpsycopg2-binary
