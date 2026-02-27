@@ -1,0 +1,4 @@
+.env
+oncall/.env
+app1/.env
+**/ .env
