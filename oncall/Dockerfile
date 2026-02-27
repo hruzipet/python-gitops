@@ -7,7 +7,10 @@ RUN pip install --upgrade pip
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Instalace ffmpeg (potřebuješ ho v kódu pro převod mp3 -> wav)
+RUN apt-get update && apt-get install -y ffmpeg && rm -rf /var/lib/apt/lists/*
+
 COPY . .
 
-# FastAPI start (předpokládá, že soubor se jmenuje main.py a FastAPI objekt je 'app')
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
+# FastAPI start – port musí být 8000, aby to sedělo na tvůj kód
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
