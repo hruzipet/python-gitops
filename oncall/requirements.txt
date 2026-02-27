@@ -1,4 +1,7 @@
 fastapi
 uvicorn
-edge-tts 
-pydubpsycopg2-binary
+requests
+pydantic
+psycopg2-binary
+python-dotenv
+edge-tts
